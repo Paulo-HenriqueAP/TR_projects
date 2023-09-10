@@ -1,0 +1,143 @@
+body {
+    margin: 0%;
+    background-color: black;
+    font-family: monospace;
+}
+
+button {
+    width: 50%;
+    background-color: aliceblue;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1px 1px 1px 1px slateblue;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 85%;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: x-small;
+}
+
+input {
+    width: 40%;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+#cronometro {
+    top: 1%;
+    position: fixed;
+    color: white;
+    box-shadow:  1px 0.5px 0.5px 0.5px violet;
+}
+
+#abaQuantidade {
+    width: 32%;
+    left: 0;
+    background-color: dodgerblue;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+    bottom: 2%;
+}
+
+#abaGerarCada {
+    width: 32%;
+    left: 34%;
+    background-color:silver;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+    bottom: 2%;
+}
+
+#abaGerarEntre {
+    width: 32%;
+    right: 0%;
+    background-color: slategrey;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+    bottom: 2%;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0%;
+    position: fixed;
+    bottom: 0;
+}
+
+#quant {
+    position: fixed;
+    bottom: 0%;
+    width: 32%;
+    left: 0;
+    color: aliceblue;
+    text-align: center;
+    bottom: 1%;
+}
+
+#gerarAC {
+    position: fixed;
+    bottom: 0%;
+    width: 32%;
+    left: 33%;
+    color: aliceblue;
+    text-align: center;
+    bottom: 1%;
+}
+
+#gerarEntre {
+    position: fixed;
+    bottom: 0%;
+    width: 32%;
+    right: 0%;
+    color: aliceblue;
+    text-align: center;
+    bottom: 1%;
+}
+
+#gerandoAtualmente {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: violet;
+    top: 1%;
+    font-size: large;
+}
+
+.abaParaConteudo {
+    position: fixed;
+    width: 100%;
+    height: 75%;
+    max-height: 75%;
+    top: 5%;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+#conteudoGerado {
+    position: absolute;
+    word-wrap: break-all;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    user-select: text;
+    cursor: text;
+    border: none;
+    font-family: monospace;
+    font-size: xx-large;
+    box-shadow: none;
+}
+
+.bloquear {
+    user-select: none;
+    pointer-events: none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor aleatoria</title>
+</head>
+
+<body>
+    <button id="cor"></button>
+
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        #cor {
+            position: fixed;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            font-family: monospace;
+            background-color: snow;
+            padding: 1%;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px;
+            border: none;
+        }
+    </style>
+    <script>
+        let R = (Math.floor(Math.random() * 256))
+        let G = (Math.floor(Math.random() * 256))
+        let B = (Math.floor(Math.random() * 256))
+        let corFinal = R + "," + G + "," + B
+
+        document.body.style = "background-color: rgb(" + corFinal + ");"
+        document.getElementById("cor").textContent = "rgb(" + corFinal + ") ⧉"
+
+        document.getElementById("cor").addEventListener("click", function() {
+            copiar  = "rgb(" + corFinal + ")"
+            copiarRGB(copiar)
+            document.getElementById("cor").style = "background-color: rgb(" + corFinal + ");"
+        })
+
+        function copiarRGB(RGB) {
+            let RGBTemp = document.createElement("input")
+            RGBTemp.value = RGB
+            document.body.appendChild(RGBTemp)
+            RGBTemp.select()
+            document.execCommand("copy")
+            document.body.removeChild(RGBTemp)
+        }
+
+    </script>
+
+</body>
+
+</html>

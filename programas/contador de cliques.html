@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar cliques</title>
+</head>
+
+<body>
+    <button id="clique"></button>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(34, 33, 39);
+        }
+
+        #clique {
+            position: absolute;
+            background-color: rgb(34, 33, 39);
+            width: 100%;
+            height: 100%;
+            color: white;
+            border: none;
+        }
+    </style>
+
+    <script>
+        let tamanho = 0
+        let dataAtual = new Date()
+        let diaHJ = dataAtual.getDate()
+        let mesHJ = dataAtual.getMonth() + 1
+        let anoHJ = dataAtual.getFullYear()
+
+        let anoNasc = 2002
+        let mesNasc = 5
+        
+        if (mesNasc < mesHJ) {
+            minhaIdade = anoHJ - anoNasc
+        }
+        else {
+            minhaIdade = anoHJ - anoNasc - 1
+        }
+
+        document.getElementById("clique").addEventListener("click", () => {
+            tamanho++
+            document.getElementById("clique").textContent = tamanho
+            document.getElementById("clique").style = "font-size: " + tamanho + "px;"
+
+            switch (tamanho) {
+                case 69:
+                    document.getElementById("clique").textContent = " 69 ( ͡° ͜ʖ ͡°)"
+                    break;
+                case minhaIdade:
+                    document.getElementById("clique").textContent = "Minha idade"
+                    break;
+                case diaHJ:
+                    document.getElementById("clique").textContent = "Mesmo dia de hj"
+                    break;
+                case mesHJ:
+                    document.getElementById("clique").textContent = "Este mês"
+                    break
+                case anoHJ:
+                    document.getElementById("clique").textContent = "Você clicou bastante! Mesmo ano atual"
+                    break
+            }
+        })
+    </script>
+</body>
+
+</html>

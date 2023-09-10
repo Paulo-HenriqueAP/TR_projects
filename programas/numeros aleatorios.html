@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src_programas/css/estilos_gerarNumA.css">
+    <title>Números aleatórios</title>
+</head>
+
+<body>
+    <div class="abaParaConteudo">
+        <button id="conteudoGerado"></button>
+    </div>
+     <span id="gerandoAtualmente"></span>
+     <span id="cronometro"></span>
+
+    <span id="quant">quantidade</span>
+    <span id="gerarAC">gerar a cada (s)</span>
+    <span id="gerarEntre">gerar entre 0 e</span>
+
+    <ul id="abaQuantidade">
+        <li><button id="somente1" onclick="quant1()">único</button></li>
+        <li><button id="quant3" onclick="quant3()">3</button></li>
+        <li><button id="quant5" onclick="quant5()">5</button></li>
+        <li><button id="quant10" onclick="quant10()">10</button></li>
+        <li><input type="number" placeholder="pers" id="persQuant" onchange="quantidadeP()" min="0"></li>
+    </ul>
+
+    <ul id="abaGerarCada">
+        <li><button id="padraoS" onclick="segundos0()">fixo</button></li>
+        <li><button id="gerar5s" onclick="segundos5()">5</button></li>
+        <li><button id="gerar30s" onclick="segundos30()">30</button></li>
+        <li><button id="gerar60s" onclick="segundos60()">60</button></li>
+        <li><input type="number" placeholder="pers" id="persSeg" onchange="segundosP()" min="0"></li>
+    </ul>
+
+    <ul id="abaGerarEntre">
+        <li><button id="gerarE10" onclick="entre10()">padrão</button></li>
+        <li><button id="gerarE100" onclick="entre100()">100</button></li>
+        <li><button id="gerarE500" onclick="entre500()">500</button></li>
+        <li><button id="gerarE999" onclick="entre999()">999</button></li>
+        <li><input type="number" placeholder="pers" id="persEnt" onchange="gEntreP()" min="0"></li>
+    </ul>
+    <script src="src_programas/js/index_numA.js"></script>
+</body>
+
+</html>

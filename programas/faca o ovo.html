@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça o OVO 🥚</title>
+</head>
+
+<body>
+    <span id="totalOvos">🥚</span>
+    <button id="ovo" onclick="criarOVO()">CLIQUE</button>
+
+    <button id="branco" onclick="corBranca()"></button>
+    <button id="marrom" onclick="corMarrom()"></button>
+    <button id="ciano" onclick="corCiano()"></button>
+    <button id="creme" onclick="corCreme()"></button>
+    <button id="rosa" onclick="corRosa()"></button>
+    <button id="aleatorio" onclick="corAleatoria()"></button>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: dimgray;
+        }
+
+        #ovo {
+            left: 50%;
+            top: 48%;
+            transform: translate(-50%, -50%);
+            background-color: #FFFFFF;
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            box-shadow: 5px 5px 5px black;
+            border: none;
+        }
+
+        #branco {
+            position: fixed;
+            bottom: 0;
+            height: 5%;
+            left: 1%;
+            width: 5%;
+            background-color: #FFFFFF;
+            text-align: center;
+            font-size: small;
+        }
+
+        #marrom {
+            position: fixed;
+            bottom: 0;
+            height: 5%;
+            left: 7%;
+            width: 5%;
+            background-color: #b76d3c;
+            text-align: center;
+            font-size: small;
+        }
+
+        #ciano {
+            position: fixed;
+            bottom: 0;
+            height: 5%;
+            left: 51%;
+            width: 5%;
+            background-color: #00FFFF;
+            text-align: center;
+            font-size: small;
+        }
+
+        #creme {
+            position: fixed;
+            bottom: 0;
+            height: 5%;
+            left: 45%;
+            width: 5%;
+            background-color: #FFFDD0;
+            text-align: center;
+            font-size: small;
+        }
+
+        #rosa {
+            position: fixed;
+            bottom: 0;
+            height: 5%;
+            right: 7%;
+            width: 5%;
+            background-color: #FFC0CB;
+            text-align: center;
+            font-size: small;
+        }
+
+        #aleatorio {
+            position: fixed;
+            bottom: 0;
+            height: 5%;
+            right: 1%;
+            width: 5%;
+            text-align: center;
+            font-size: small;
+        }
+
+        #totalOvos {
+            position: fixed;
+            font-size: xx-small;
+            left: 1%;
+            top: 1%;
+        }
+    </style>
+    <script>
+        function corBranca() {
+            idOvo = "branco"
+            corOvo = "#FFFFFF"
+            Qovo = 0
+            trocarOvo()
+        }
+
+        function corMarrom() {
+            idOvo = "marrom"
+            corOvo = "#b76d3c"
+            Qovo = 1
+            trocarOvo()
+        }
+
+        function corCiano() {
+            idOvo = "ciano"
+            corOvo = "#00FFFF"
+            Qovo = 2
+            trocarOvo()
+        }
+
+        function corCreme() {
+            idOvo = "creme"
+            corOvo = "#FFFDD0"
+            Qovo = 3
+            trocarOvo()
+        }
+
+        function corRosa() {
+            idOvo = "rosa"
+            corOvo = "#FFC0CB"
+            Qovo = 4
+            trocarOvo()
+        }
+
+        function corAleatoria() {
+            idOvo = "aleatorio"
+            corOvo = "rgb(" + cor + ");"
+            Qovo = 5
+            trocarOvo()
+        }
+    </script>
+    <script src="src_programas/js/index_facaOvo.js"></script>
+
+</body>
+
+</html>

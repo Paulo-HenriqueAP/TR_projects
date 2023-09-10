@@ -1,0 +1,180 @@
+body {
+    margin: 0%;
+    background-color: #2A7E19;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+#tronco {
+    position: absolute;
+    height: 200%;
+    background-color: #5f3e28;
+    border: none;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+}
+
+#corteArvore {
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    font-size: xx-large;
+    background-color: #2A7E19;
+    border-radius: 7px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.caido {
+    position: absolute;
+    bottom: 0;
+}
+
+.espera {
+    pointer-events: none;
+}
+
+.frutasEsquerda {
+    font-size: xx-large;
+    position: absolute;
+    width: 40%;
+    background-color: transparent;
+    height: 100%;
+    text-align: center;
+    top: -5%;
+}
+
+.frutasDireita {
+    font-size: xx-large;
+    position: absolute;
+    right: 0;
+    width: 40%;
+    background-color: transparent;
+    height: 100%;
+    text-align: center;
+    top: -5%;
+}
+
+.rio {
+    position: absolute;
+    bottom: 0%;
+    height: 5%;
+    background-color: #0f5e9c;
+    width: 100%;
+    font-family: monospace;
+    border: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+span {
+    position: absolute;
+}
+
+.cairNo_rio {
+    animation-name: irParaBaixo;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes irParaBaixo {
+    from {
+        top: -5%;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+
+.hidden {
+    display: none;
+    width: 0px;
+}
+
+.esconder {
+    display: none;
+}
+
+#galho0 {
+    position: absolute;
+    background-color: #6f513d;
+    left: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+
+#galho1 {
+    position: absolute;
+    background-color: #6f513d;
+    left: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+#galho2 {
+    position: absolute;
+    background-color: #6f513d;
+    left: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+#galho3 {
+    position: absolute;
+    background-color: #6f513d;
+    left: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+#galho4 {
+    position: absolute;
+    background-color: #6f513d;
+    left: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+#galho5 {
+    position: absolute;
+    background-color: #6f513d;
+    right: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+#galho6 {
+    position: absolute;
+    background-color: #6f513d;
+    right: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+#galho7 {
+    position: absolute;
+    background-color: #6f513d;
+    right: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}
+
+#galho8 {
+    position: absolute;
+    background-color: #6f513d;
+    right: 50%;
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+}

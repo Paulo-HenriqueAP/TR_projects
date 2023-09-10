@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wavefont:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    
+    <title>Relógio simples</title>
+</head>
+
+<body>
+    <p id="hora"></p>
+    <ul class="etc">
+        <li><span id="grafico"></span></li>
+        <li><span id="dia"></span></li>
+    </ul>
+
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f2f2f2;
+        }
+
+        #hora {
+            color: black;
+            position: absolute;
+            font-size: 25vw;
+            width: 100%;
+            left: 55%;
+            top: 65%;
+            margin-left: -50%;
+            margin-top: -25vw;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        #grafico {
+            font-size: large;
+            font-family: 'Wavefont', cursive;
+            color: #666666;
+        }
+
+        #dia {
+            font-size: small;
+            color: #666666;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .etc {
+            position: absolute;
+            bottom: 0;
+            list-style: none;
+            padding: 0%;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function atualizar() {
+            setTimeout(function () {
+                document.getElementById("hora").textContent = new Date().toLocaleTimeString()
+                document.getElementById("grafico").textContent = document.getElementById("hora").textContent
+                document.getElementById("dia").textContent = new Date().toLocaleDateString()
+                atualizar()
+            }, 1000)
+        }
+
+        atualizar()
+
+    </script>
+</body>
+
+</html>

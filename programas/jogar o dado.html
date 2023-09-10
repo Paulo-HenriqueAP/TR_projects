@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src_programas/css/estilos_jogarDado.css">
+    <title>Dados</title>
+</head>
+
+<body>
+    <img id="dado" src="src_programas/img/dado/inicial.png">
+
+    <div id="centro">
+        <p>
+            <span id="texto">ESCOLHO </span>
+        </p>
+        <button onclick="D1()">⚀</button>
+        <button onclick="D2()">⚁</button>
+        <button onclick="D3()">⚂</button>
+        <button onclick="D4()">⚃</button>
+        <button onclick="D5()">⚄</button>
+        <button onclick="D6()">⚅</button>
+        <p>
+            <button id="jogar" onclick="joguei()">ROLAR 🎲</button>
+        </p>
+    </div>
+    
+        <span id="resultado"></span>
+
+    <button id="reiniciar" class="hidden">↺</button>
+    
+    <script src="src_programas/js/index_jogarDado.js"></script>
+</body>
+
+</html>
